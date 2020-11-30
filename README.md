@@ -12,7 +12,7 @@ To run this demo:
 The URL should use your instance of Che/CodeReady Workspaces:
 
 ```
-https://codeready-openshift-workspaces.apps.aws.kubejava.com/factory?url=https://github.com/burrsutter/quarkus-reactjs-postit-app
+https://codeready-code-ready-project.apps.cluster-da58.da58.example.opentlc.com?url=https://github.com/burrsutter/quarkus-reactjs-postit-app
 ```
 
 Alternatively,
