@@ -15,7 +15,7 @@ components:
   - alias: quarkus-backend-dev
     type: dockerimage
     image: quay.io/quarkus/centos-quarkus-maven:20.0.0-java8
-    memoryLimit: 5Gi
+    memoryLimit: 4Gi
     command: ['sleep']
     args: ['infinity']
     mountSources: true
@@ -38,7 +38,7 @@ components:
         containerPath: /.m2
 
   - mountSources: true
-    memoryLimit: 64M
+    memoryLimit: 32M
     type: dockerimage
     image: quay.io/sunix/postit-app-dev-data
     alias: data
@@ -105,7 +105,7 @@ components:
     type: dockerimage
     image: sunix/git-devtools
     mountSources: true
-    memoryLimit: 64M
+    memoryLimit: 32M
     args: ['sleep', 'infinity']
 
 commands:
