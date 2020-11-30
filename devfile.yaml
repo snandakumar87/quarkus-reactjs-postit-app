@@ -200,7 +200,7 @@ commands:
                     sleep "2";
                   done
                   oc cancel-build bc/quarkus-backend
-                  oc patch bc/quarkus-backend -p '{"spec":{"resources":{"limits":{"cpu":"6", "memory":"6Gi"}}}}'
+                  oc patch bc/quarkus-backend -p '{"spec":{"resources":{"limits":{"cpu":"4", "memory":"4Gi"}}}}'
                   oc start-build quarkus-backend
                   oc expose svc/quarkus-backend
                   # labels
